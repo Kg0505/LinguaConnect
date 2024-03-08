@@ -29,3 +29,47 @@
     </footer>
 </body>
 </html>
+<header>
+    <h1>Tutor Search</h1>
+</header>
+<main>
+    <section id="filters">
+        <h2>Filters</h2>
+        <form id="filter-form">
+            <label for="language-select">Language:</label>
+            <select id="language-select">
+                <option value="All">All</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Telgu">Telgu</option>
+                <option value="Kannad">Kannad/option>
+                <option value="Marathi">Marathi</option>
+                <option value="Russian">Russian</option>
+                <!-- Add more language options as needed -->
+            </select><br>
+
+            <label for="experience-range">Experience:</label>
+            <input type="range" id="experience-range" min="1" max="10"><br>
+
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="0" max="100" step="5"><br>
+
+            <button type="submit">Apply Filters</button>
+        </form>
+    </section>
+
+    <section id="search-results">
+        <h2>Search Results</h2>
+        <div id="results-container">
+            <!-- Search results will be displayed here -->
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 LinguaConnect. All rights reserved.</p>
+</footer>
+<script src="script.js" defer></script> <!-- Link to your JavaScript file -->
+
