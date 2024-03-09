@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>User Registration</title>
-<link rel="stylesheet" href="register.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
-<div class="container">
-  <form action="#" method="POST" id="login">
-    <h2>User Registration</h2>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    
-    <label for="role">Role:</label>
-    <select id="role" name="role" required>
-      <option value="tutor">Tutor</option>
-      <option value="student">Student</option>
-    </select>
-    
-    <label for="languages">Languages:</label>
-    <input type="text" id="languages" name="languages" required>
-    
-    <button type="submit">Register</button>
-  </form>
-</div>
-<!-- Include Firebase SDK via CDN -->
-<script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js"></script>
+    <div class="bg">
+        <a href="#"><img src="bg.jpg"></a>
 
+    </div>
+    <div class="popup-container">
+        <div class="popup">
+            <div class="popup-header">
+                <h2>Login or Sign Up</h2>
+                <button class="close-btn"><a href=../dashboard/dashboard.html>x</a></button>
+            </div>
+            <div class="popup-body">
+                <form id="login-form" class="form">
+                    <label for="username">Username or Email:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="signup-link">
+                    Don't have an account? <a href="#" id="signup-link">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+`

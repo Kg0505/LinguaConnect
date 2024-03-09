@@ -3,22 +3,82 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5dc; /* light cream color */
-    color: #333;
-    font-weight: lighter; /* light bold */
+}
+header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 
-header {
-<<<<<<< HEAD
-    background-color: #d2b48c; /* light brown */
-    color: #fff;
-=======
-    background-color: #d4f004;
-    color: rgb(249, 6, 6);
->>>>>>> 162b87178c974a94c778a33ddde555ad15370b1c
-    padding: 20px;
-    text-align: center;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search-bar {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 150px;
+    margin-right: 50 px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+
+.cta button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta button.login {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+
 
 main {
     padding: 20px;
